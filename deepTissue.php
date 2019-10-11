@@ -37,7 +37,7 @@ pain and/or injuries in the:</p>
         
         </ul>
     
-    <button type="button" id="productPricesBtn">Check Prices</button>
+    <button type="button" id="productPricesBtn"  onclick="location.href='prices.php'">Check Prices</button>
         </div>
     </div>
     

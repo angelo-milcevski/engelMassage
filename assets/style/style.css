@@ -71,7 +71,9 @@ ul {
 
 nav {
     background-color: white;
-    height: 40px;
+    height: 50px;
+    position: fixed;
+    width:100%;
 }
 
 nav a {
@@ -79,10 +81,24 @@ nav a {
     text-decoration: none;
 }
 
-nav a:active {
+nav a:active, nav a:hover {
     text-decoration: underline;
     color: #90CA6B;
 }
+
+.navDropdown{
+    display: none;
+    position: absolute;
+    width: 150px;
+    right: 0;
+    margin-right: 292px;
+    background-color: #fff;
+    text-align:left;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.14);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.14);
+}
+
 
  #menuList{
         display: none !important;
@@ -93,12 +109,30 @@ nav a:active {
     list-style: none;
     float: right;
     margin: 0 40px;
+    text-align: right;
+    width: 100%;
 
+}
+
+#logo{
+    width: 65px;
+    float: left;
+    padding: 5px;
+    margin-left: 80px;
+    cursor:pointer;
 }
 
 #navList li {
     display: inline-block;
-    padding: 6px 16px;
+    padding: 10px 16px;
+}
+
+.menuDropdown{
+        margin-left: 15px;
+}
+
+.menuDropdown a{
+    font-size: 15px;
 }
 
 .fa-facebook-square{
@@ -145,15 +179,45 @@ nav a:active {
 }
 
 .introduction {
-    margin-left: 50px;
+    display: grid;
+    margin:80px ;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'grid1 grid2'
 }
 
+.intro-grid1{
+    grid-area: grid1;
+}
+
+.intro-grid2{
+    grid-area: grid2;
+    text-align: center;
+}
+
+.img-karina{
+    width: 45%;
+}
 #introductionList {
     list-style: none;
+    width: 550px;
+}
+
+.introduction-headline{
+    font-size: 30px;
+}
+
+.introduction-subheadline{
+    font-size: 25px;
+}
+
+.introduction-list-element{
+    padding: 30px 0;
 }
 
 .fa-check {
     color: #90CA6B;
+    margin-right:10px;
+    font-size:25px;
 }
 
 
@@ -366,6 +430,10 @@ footer p {
     margin-left: 50px;
 }
 
+.contact-padding{
+    padding: 25px 20px;
+}
+
 .locationInfo {
     float: right;
     width: 40%;
@@ -373,8 +441,13 @@ footer p {
 
 }
 
+.red{
+    color:red;
+}
+
 #openinHrsTb {
     text-align: left;
+    width:100%;
 }
 
 /* ABOUT */
@@ -414,8 +487,30 @@ footer p {
     }
     
     .introduction{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'grid1'
+        'grid2';
         margin:15px;
     }
+    
+    .img-karina{
+        width:80%;
+    }
+    
+    .introduction-headline {
+    font-size: 25px;
+    }
+    
+    .introduction-subheadline {
+    font-size: 20px;
+    }
+    
+    .introduction-list-element {
+    padding: 30px 10px;
+    font-size: 15px;
+    }
+    
     .heroHeading {
     font-size: 25px !important;
     }
@@ -428,6 +523,7 @@ footer p {
     
     #introductionList{
         padding-left: 15px;
+        width: 280px;
     }
     
     .kLaserGrid, .deepTGrid, .cuppingGrid {
@@ -449,7 +545,7 @@ footer p {
 @media only screen and (max-width: 640px) {
 
     nav {
-        height: 50px;
+        height: 45px;
     }
 
     .slider {
@@ -477,7 +573,7 @@ footer p {
     #closeMenuIcon {
     float: right;
     margin: 0 10px;
-    font-size: 30px;
+    font-size: 25px;
     display: block !important;
         
 }
@@ -505,20 +601,35 @@ footer p {
     /* INDEX */
     .fa-bars {
         display: block !important;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #navList {
         display: none;
     }
-
-    .introduction {
-        width: 92%;
+    
+    .introduction{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'grid1'
+        'grid2';
         margin: 4%;
+    }
+    
+    .img-karina{
+        width:80%;
     }
     
     #introductionList{
         padding-left: 10px;
+        padding-left: 10px;
+        width: 90%;
+    }
+    
+    .intro-portrait{
+        width: 150px;
+        display:inline-block;
+        float: right;
     }
 
     .homeHeroBanner {
@@ -615,9 +726,17 @@ footer p {
     .cuppingGridHeading {
         margin-bottom: 20px;
     }
-
-    .introduction {
-    margin-left: 20px;
+    
+    .introduction{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'grid1'
+        'grid2';
+        margin-left: 20px;
+    }
+    
+    .img-karina{
+        width:60%;
     }
     
     .kLaserGrid {
@@ -720,8 +839,15 @@ footer p {
         margin-bottom: 20px;
     }
     
-    .introduction {
-    margin-left: 20px;
+    .introduction{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'grid1 grid2';
+        margin-left: 20px;
+    }
+    
+    .img-karina{
+        width:60%;
     }
    
    /* SERVICES */

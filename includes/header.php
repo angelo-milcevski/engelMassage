@@ -12,13 +12,21 @@
 </head>
 <body>
 <nav>
-     
+          <!--   <img src="../assets/img/logo.png" id="logo" onclick="window.location='index'">-->
+
     <ul id="navList">
-        <li><a href="index.php" target="_self">Home</a></li>
-        <li><a href="services.php" target="_self">Services</a></li>
-        <li><a href="prices.php" target="_self">Prices</a></li>
-        <li><a href="contact.php" target="_self">Contact</a></li>
-        <li><a href="about.php" target="_self">About</a></li>  
+        <img src="../assets/img/logo.png" id="logo" onclick="window.location='index'">
+        <li><a href="index" target="_self">Home</a></li>
+        <li class="servicesDropdown"><a href="#" id="servicesLink">Services</a></li>
+		<div class="navDropdown">
+			<li><a href="klaser" target="_self">K Laser</a></li>
+			<li><a href="deepTissue" target="_self">Deep Tissue Massage</a></li>
+			<li><a href="cuppingTherapy" target="_self">Cupping Therapy</a></li>
+		
+		</div>
+        <li><a href="prices" target="_self">Prices</a></li>
+        <li><a href="contact" target="_self">Contact</a></li>
+        <li><a href="about" target="_self">About</a></li>  
         <li><a href="https://www.facebook.com/KarinaEngelbrecht/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>  
         </ul>
     <i class="fa fa-bars" onclick="openMenu()"></i>
@@ -26,13 +34,19 @@
         <div class="slider">
     <i class="fa fa-times" id="closeMenuIcon" onclick="closeMenu()"></i>
             
-            
+
             <ul id="menuList">
-        <li><a href="index.php" target="_self">Home</a></li>
-        <li><a href="services.php" target="_self">Services</a></li>
-        <li><a href="prices.php" target="_self">Prices</a></li>
-        <li><a href="contact.php" target="_self">Contact</a></li>
-        <li><a href="about.php" target="_self">About</a></li>  
+        <li><a href="index" target="_self">Home</a></li>
+        <li><a onclick="menuDropdown()">Services <i class="fas fa-chevron-down"></i></a></li>
+			<div class="menuDropdown" style="display:none">
+			<li><a href="klaser" target="_self">K Laser</a></li>
+			<li><a href="deepTissue" target="_self">Deep Tissue Massage</a></li>
+			<li><a href="cuppingTherapy" target="_self">Cupping Therapy</a></li>
+		</div>
+		
+        <li><a href="prices" target="_self">Prices</a></li>
+        <li><a href="contact" target="_self">Contact</a></li>
+        <li><a href="about" target="_self">About</a></li>  
         <li><a href="https://www.facebook.com/KarinaEngelbrecht/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>  
         </ul>
     

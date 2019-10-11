@@ -7,19 +7,16 @@
     </div>
     
     <div class="contactInfo">
-    <p><i class="fas fa-phone"></i> To book an appointment send SMS anytime of the day, 
+    <p class="contact-padding"><i class="fas fa-phone"></i> To book an appointment send SMS anytime of the day, 
 or call on 28 97 03 73.</p>
-        <p><i class="fas fa-times" id="cancellationIcon"></i> Cancellation must be made no later 
-than the day before your appointment.
-</p>
-        <p>Non-appearance or late cancellation will be
+    <p class="contact-padding"><i class="fas fa-times" id="cancellationIcon"></i> Cancellation must be made no later 
+than the day before your appointment. <br> <br>Non-appearance or late cancellation will be
 charged with the price of the booked treatment(s).
 </p>
-        <p><i class="fas fa-file-contract" id="formIcon"></i> At your first visit a form is needed to be filled 
+       
+    <p class="contact-padding"><i class="fas fa-file-contract" id="formIcon"></i> At your first visit a form is needed to be filled 
 regarding the rules of RAB-registration that
-takes 5-10 minutes. 
-</p>
-        <p>A declaration of consent must also be signed. 
+takes 5-10 minutes. <br> <br> A declaration of consent must also be signed. 
 </p>
         
         <table id="openinHrsTb" cellspacing="0" cellpadding="10">
@@ -30,12 +27,22 @@ takes 5-10 minutes.
             </tr>
             
             <tr>
-                <td>Tuesday</td>
-                <td>14:30-17:30</td>
+                <td>Monday</td>
+                <td>9:00-17:00</td>
             </tr>
-        <tr>
+            
+            <tr>
+            <td>Tuesday</td>
+            <td>9:00-17:30</td>
+            </tr>
+            
+            <tr>
             <td>Wednesday</td>
-            <td>9:00-18:00</td>
+            <td>9:00-17:00</td> 
+            </tr>
+          <tr>
+            <td>Thursday</td>
+            <td class="red">Closed</td> 
             </tr>
             
             <tr>
@@ -43,8 +50,15 @@ takes 5-10 minutes.
             <td>9:00-19:00</td> 
             </tr>
             
+            
             <tr>
-            <td>Saturday only by appointment</td>
+            <td>Saturday</td>
+            <td class="red">Closed</td>
+            </tr>
+            
+            <tr>
+            <td>Sunday</td>
+            <td class="red">Closed</td>
             </tr>
         
         </table>

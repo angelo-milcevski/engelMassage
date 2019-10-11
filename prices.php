@@ -37,7 +37,7 @@
 
         <tr>
             <td><i class="far fa-clock"></i> 90 min (full body) </td>
-            <td>210kr</td>
+            <td>575kr</td>
         </tr>
 
         <tr>
@@ -59,17 +59,17 @@
 
         <tr>
             <td><i class="far fa-clock"></i> 45 min </td>
-            <td>1417 kr</td>
+            <td>1417kr</td>
         </tr>
 
         <tr>
             <td><i class="far fa-clock"></i> 60 min </td>
-            <td>1777 kr</td>
+            <td>1777kr</td>
         </tr>
 
         <tr>
             <td><i class="far fa-clock"></i> 90 min (full body) </td>
-            <td>575 kr</td>
+            <td>2587kr</td>
         </tr>
 
         <tr class="tableHeading">

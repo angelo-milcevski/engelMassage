@@ -23,7 +23,7 @@ effects or pain.
 Since the usage of the laser speeds up metabolism, the recovery process is
 much faster and more effective.</p>
         
-        <button type="button" id="servicesMorebtn">Read More</button>
+        <button type="button" id="servicesMorebtn"  onclick="window.open('http://k-laser.dk/')">Read More</button>
 
     </div>
     
@@ -47,7 +47,7 @@ pain and/or injuries in the:</p>
         
         </ul>
     
-    <button type="button" id="productPricesBtn">Check Prices</button>
+    <button type="button" id="productPricesBtn"  onclick="location.href='prices.php'">Check Prices</button>
         </div>
     </div>
  

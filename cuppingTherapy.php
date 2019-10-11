@@ -39,7 +39,7 @@ is used to treat:</p>
 
             </ul>
 
-            <button type="button" id="productPricesBtn">Check Prices</button>
+            <button type="button" id="productPricesBtn" onclick="location.href='prices.php'">Check Prices</button>
         </div>
     </div>
 <?php include_once('includes/footer.php'); ?>
